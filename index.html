@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Can you win the crystal?</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="header">
+		<h1>Crystal Collector</h1>
+	</div>
+	<div class="instructions">
+		<h3>Okay, lets be real and keep it short, here's how to play.</h3>
+		</br>
+		<ol>
+			<li>Theres a random number at the start of the game.<span>"Score to Match"</span></li>
+			<li>With four crystals below.</li>
+			<ul>
+				<li id="blue">Blue</li>
+				<li id="green">Green</li>
+				<li id="purple">Purple</li>
+				<li id="yellow">Yellow</li>
+			</ul>
+			<li>By clicking on a crystal, your score with increase with points.</li>
+			<li>You can only win if your numbers match.</li>
+			<li>You lose the game by over projecting the random number.</li>
+			<li>The value of each crystal is hidden. We like to give you a bit of a challange</li>
+			<li>Each time when the game begins the value of each crystal will Change.</li>
+			<li>Good Luck!</li>
+		</ol>
+	</div>
+	<div class="numberToMatch">
+		<h2>Number To Get:
+			<span id= "randomNumber"></span>
+		</h2>
+	</div>
+	<div class="winsAndLosses">
+		<h2>Wins:
+			<span id= "numberWins"></span>
+			</br>
+			Losses: 
+			<span id= "numberLosses"></span>
+		</h2>
+	</div>
+	<div class="gems">
+		<img src="assets/images/purple Jewel.png" class=gemImage id="one" alt="Purple Jewel">
+		<img src="assets/images/Green Jewel.png" class=gemImage id="two" alt="Green Jewel">
+		<img src="assets/images/blue Jewel.png" class=gemImage id= "three" alt="Blue Jewel">
+		<img src="assets/images/Yellow Jewel.png" class=gemImage id= "four" alt="Yellow Jewel>
+	</div>
+	<div class="userTotal">
+		<h2>Your total score is:
+			<span id="finalTotal"></span>
+		</h2>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
