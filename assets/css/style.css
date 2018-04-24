@@ -6,12 +6,12 @@ body{
 
 
 div{
-	background-color: white;
+	background-color: plum;
 	margin: 10px;
 	width: 25%
 }
 div{
-	border: solid 2px antiquewhite;
+	border: solid 2px cornsilk;
 	padding: 10px;
 }
 h1, h3, span{

@@ -1,32 +1,33 @@
 $( document ).ready(function(){
     
-    
     var userTotal= 0; 
     var wins= 0;
     var losses = 0;
     
+    function randomNumber() {
+        return Math.floor(Math.random()*11+1);
+    }
     
-    var Random=Math.floor(Math.random()*101+19)
+    var Random=Math.floor(Math.random()*120+19)
 
     $('#randomNumber').text(Random);
   
-    var num1= Math.floor(Math.random()*11+1)
-    var num2= Math.floor(Math.random()*11+1)
-    var num3= Math.floor(Math.random()*11+1)
-    var num4= Math.floor(Math.random()*11+1)
-   
+    var num1= randomNumber();
+    var num2= randomNumber();
+    var num3= randomNumber();
+    var num4= randomNumber();
     
   $('#numberWins').text(wins);
   $('#numberLosses').text(losses);
   //resets the game
   function reset(){
-        Random=Math.floor(Math.random()*101+19);
+        Random=Math.floor(Math.random()*120+19);
         console.log(Random)
         $('#randomNumber').text(Random);
-        num1= Math.floor(Math.random()*11+1);
-        num2= Math.floor(Math.random()*11+1);
-        num3= Math.floor(Math.random()*11+1);
-        num4= Math.floor(Math.random()*11+1);
+        num1= randomNumber();
+        num2= randomNumber();
+        num3= randomNumber();
+        num4= randomNumber();
         userTotal= 0;
         $('#finalTotal').text(userTotal);
         } 
